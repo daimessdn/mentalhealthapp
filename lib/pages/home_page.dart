@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                 ),
 
                 // bagian box untuk margin
-                SizedBox(height: 20),
+                SizedBox(height: 25),
 
                 // bagian search
                 Container(
@@ -74,7 +74,28 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text("Search", style: TextStyle(color: Colors.white)),
                   ]),
-                )
+                ),
+
+                // bagian box untuk margin
+                SizedBox(height: 25),
+
+                // how do you feel
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "How do you feel?",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Icon(
+                      Icons.more_horiz,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
               ],
             ),
           ),
